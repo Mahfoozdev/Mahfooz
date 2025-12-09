@@ -9,14 +9,14 @@ const Projects = () => {
         {
             title: 'Paytime',
             category: 'FinTech',
-            tech: ['React', 'Node.js', 'SQL'],
-            description: 'Payroll management system used by companies to generate payrolls of clients and see for financial managment for salaries salary slips etc.',
+            tech: ['Laravel', 'PostgreSQL', 'React.js', 'TypeScript'],
+            description: 'An enterprise-grade payroll management solution enabling companies to automate payroll generation, manage client financials, and streamline salary processing with detailed payslip generation.',
         },
         {
             title: 'Rentroos',
             category: 'Real Estate',
-            tech: ['React', 'Node.js', 'MongoDB'],
-            description: 'Platform allowing users to see the places or homes and they can buy from that platform.',
+            tech: ['Laravel', 'PostgreSQL', 'React.js', 'TypeScript'],
+            description: 'A comprehensive real estate marketplace connecting buyers, landlords, and agents. Facilitates property discovery, seamless communication, and efficient real estate transactions.',
         },
         {
             title: 'E-commerce Web App',
