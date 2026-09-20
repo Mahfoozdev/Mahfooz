@@ -58,9 +58,11 @@ export function HeroSection() {
           {hero.description}
         </p>
         <div className="mt-8 flex flex-wrap items-center gap-4 pb-10 xl:pb-0">
-          <Button asChild>
-            <a href={hero.resumeLink}>[ SEE MY RESUME ]</a>
-          </Button>
+         <Button asChild>
+  <a href="/resume/MUHAMMAD_MAHFOOZ_UL_HAQ_Resume.pdf" download>
+    [ SEE MY RESUME ]
+  </a>
+</Button>
           <SocialLink href={socialLinks.github} icon="mdi:github" label="GitHub" />
           <SocialLink
             href={socialLinks.linkedin}

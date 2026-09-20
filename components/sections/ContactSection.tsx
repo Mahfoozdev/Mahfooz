@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import { SectionLabel } from "@/components/primitives/SectionLabel";
 import { SocialLink } from "@/components/primitives/SocialLink";
 import { socialLinks } from "@/data/social";
