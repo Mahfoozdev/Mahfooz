@@ -14,11 +14,9 @@ export interface GithubProfile {
 	login: string;
 }
 
-interface ContactSectionProps {
-	github: GithubProfile;
-}
 
-export function ContactSection({ github }: ContactSectionProps) {
+
+export function ContactSection() {
 	return (
 		<div>
 			<SectionLabel num="07" />

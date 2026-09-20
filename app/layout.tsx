@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, Space_Mono } from "next/font/google";
-
+import favicon from "@/public/favicon.png"
 import "./globals.css";
 
 const spaceMono = Space_Mono({
@@ -54,7 +54,7 @@ const seoData = {
     "Portfolio",
   ],
   url: "https://mahfooz-dwv2.vercel.app/",
-  image: "https://avatars.githubusercontent.com/u/59178380?v=4",
+  image: `${favicon}`,
 };
 
 export const metadata: Metadata = {

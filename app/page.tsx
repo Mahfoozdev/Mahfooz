@@ -10,38 +10,9 @@ import { ProjectsSection } from "@/components/sections/ProjectsSection";
 import { SkillsSection } from "@/components/sections/SkillsSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 
-const fallbackGithub: GithubProfile = {
-  avatar_url: "https://avatars.githubusercontent.com/u/59178380?v=4",
-  bio: "Full Stack Web Developer | Python / Django / React / Next.js",
-  location: "Karachi, PK",
-  html_url: "https://github.com/1hanzla100",
-  login: "1hanzla100",
-};
 
-async function getGithubProfile(): Promise<GithubProfile> {
-  try {
-    const res = await fetch("https://api.github.com/users/1hanzla100", {
-      headers: { Accept: "application/vnd.github.v3+json" },
-      cache: "force-cache",
-    });
-
-    if (!res.ok) return fallbackGithub;
-
-    const data = (await res.json()) as Partial<GithubProfile>;
-    return {
-      avatar_url: data.avatar_url || fallbackGithub.avatar_url,
-      bio: data.bio ?? fallbackGithub.bio,
-      location: data.location ?? fallbackGithub.location,
-      html_url: data.html_url || fallbackGithub.html_url,
-      login: data.login || fallbackGithub.login,
-    };
-  } catch {
-    return fallbackGithub;
-  }
-}
 
 export default async function Home() {
-  const github = await getGithubProfile();
 
   return (
     <PageShell>
@@ -66,7 +37,7 @@ export default async function Home() {
         <ProjectsSection />
       </SectionWrapper>
       <SectionWrapper id="contact" num="07">
-        <ContactSection github={github} />
+        <ContactSection />
       </SectionWrapper>
     </PageShell>
   );
